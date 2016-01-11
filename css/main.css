@@ -90,6 +90,7 @@ section {
 }
 
 footer {
+    margin-bottom: 40px;
     text-align: center;
     font-size: 0.7em;
 }
@@ -106,6 +107,18 @@ section a:hover {
 
 .clearfix {
     clear: both;
+}
+
+.image {
+    padding: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
 
 @media (max-width: 740px) {
