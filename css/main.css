@@ -1,0 +1,169 @@
+body {
+    min-height: 100%;
+    
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 1.2em;
+    color: white;
+    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fd746c+0,d67653+100 */
+    background: #fd746c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fd746c 0%, #d67653 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #fd746c 0%,#d67653 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #fd746c 0%,#d67653 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd746c', endColorstr='#d67653',GradientType=0 ); /* IE6-9 */
+    background-attachment: fixed;
+}
+
+header, section, footer {
+    width: 700px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 200px;
+    margin-bottom: 30px;
+    
+    font-size: 2.7em;
+}
+
+header div {
+    padding: 25px;
+    padding-left: 190px;
+}
+
+header img {
+    float: left;
+    opacity: 0.7;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.heading {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.work, .work img {
+    width: 160px;
+    height: 160px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    
+    background-color: #f09c7d;
+}
+
+.thought {
+    margin-top: 10px;
+}
+
+.date {
+    display: block;
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    padding: 10px;
+    
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.title {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    line-height: 1.8em;
+    background-color: #f09c7d;
+    box-shadow: 10px 0 0 #f09c7d, -10px 0 0 #f09c7d;
+}
+
+.thought a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.thought a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7em;
+}
+
+section a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media (max-width: 740px) {
+    header, section, footer {
+        width: auto;
+        margin: 30px 20px;
+    }
+
+    header img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+        opacity: 0.7;
+    }
+    
+    header div {
+        margin: 0 auto;
+        padding: 0;
+        padding-left: 0;
+        text-align: center;
+        font-size: 0.5em;
+    }
+    
+    .heading {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .work, .work img {
+        width: 130px;
+        height: 130px;
+        float: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        background-color: #f09c7d;
+    }
+    
+    .thought {
+        margin-top: 10px;
+    }
+
+    .date {
+        display: none;
+        width: 100px;
+        float: left;
+        margin-right: 10px;
+        padding: 0 10px;
+
+        text-align: right;
+        font-size: 0.8em;
+    }
+
+    .title {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        line-height: 1.8em;
+        background-color: #f09c7d;
+        box-shadow: 10px 0 0 #f09c7d, -10px 0 0 #f09c7d;
+    }
+}

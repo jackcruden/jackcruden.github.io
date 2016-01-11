@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<header>
+    <div style="text-align: center; margin: 0; padding: 0;">{{ page.title }}</div>
+</header>
+
+<section>
+    <div class="heading">{{ page.date | date: "%b %-d, %Y" }}</div>
+
+    {{ content }}
+    
+    <div class="clearfix"></div>
+</section>

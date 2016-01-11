@@ -1,0 +1,9 @@
+title: Jack Cruden
+description: I make websites and other stuff.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://jackcruden.com" # the base hostname & protocol for your site
+author: Jack Cruden
+email: jack@jackcruden.com
+
+# Build settings
+markdown: kramdown
