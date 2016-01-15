@@ -26,8 +26,25 @@ layout: default
     {% for post in site.categories.thought %}
         {% if post.published %}
             <div class="thought">
-                <span class="date">{{ post.date | date: "%-d %B, %Y" }}</span>
+                <span class="date">
+                    {% assign d = post.date | date: "%-d" %}
+                    {% case d %}
+                        {% when "1" or "21" or "31" %}{{ d }}st
+                        {% when "2" or "22" %}{{ d }}nd
+                        {% when "3" or "23" %}{{ d }}rd
+                        {% else %}{{ d }}th
+                    {% endcase %}
+                    {{ post.date | date: "%B, %Y" }}
+                </span>
                 <span class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
+                <span class="read-time">
+                    {% assign words = post.content | number_of_words %}
+                    {% if words < 360 %}
+                        1 min
+                    {% else %}
+                        {{ words | divided_by:180 }} mins
+                    {% endif %}
+                </span>
             </div>
         {% endif %}
     {% endfor %}
